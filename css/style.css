@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin:20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    min-height: 90vh;
+}
+
+/* left col*/
+
+.sidebar {
+    flex:1;
+    background: #2c3e50;
+    color: white;
+    padding: 40px 30px;
+    border-radius: 10px 0 0 10px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #34495e;
+    margin: 0 auto 20px;
+    display: block;
+    background: #34495e; /*заглушка вместо фото*/
+}
+
+.sidebar h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 24px;
+
+}
+
+.title {
+    text-align: center;
+    color: #ecf0f1;
+    margin-bottom: 30px;
+}
+
+.contact, .skills {
+    margin-bottom: 30px;
+}
+.contact h2, .skills h2 {
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.skills ul {
+    list-style: none;
+
+}
+
+.skills li {
+    background: #34495e;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+
+}
+
+
+/* правая колонка*/
+
+.content {
+    flex:2;
+    padding: 40px;
+
+}
+
+.content h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+
+}
+
+.project-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+
+}
+
+.tech-stack {
+    margin: 10px 0;
+}
+
+.tech-tag {
+    background: #3498db;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.project-link {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project-link:hover {
+    background: #34495e;
+}
+/* Адаптивность под устройства  */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .sidebar {
+        border-radius: 10px 10px 0 0;
+    }
+}
